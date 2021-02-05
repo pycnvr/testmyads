@@ -1,8 +1,8 @@
-<!-- saved from url=(0041)http://testmyads.com/testmyads/test1.html -->
+<!-- saved from url=(0041)/testmyads/test1.html -->
 <html>
 
 <head>
-	<link rel="icon" href="http://testmyads.com/testmyads/images/epsilon_fav_icon.ico">
+	<link rel="icon" href="/testmyads/images/epsilon_fav_icon.ico">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>Test Page Menu</title>
 	<style>
@@ -23,7 +23,7 @@
 
 	<body link="black">
 		<a href="http://www.conversantmedia.com/">
-			<img src="http://testmyads.com/testmyads/images/EPS_Logo_cropped.jpg" alt="logo" height="72" border="0">
+			<img src="/testmyads/images/EPS_Logo_cropped.jpg" alt="logo" height="72" border="0">
 		</a>
 		<br>
 		<br>
@@ -74,6 +74,9 @@
 				</li>
 				<li>
 					<a style="text-decoration:none" data-path="mobilevideo.html" href="adv_mrc/mobile/mobilevideo.html?sid=201376&deal_id=7371d63&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2014_0_1%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F14.0%20Mobile%2F15E148%20Safari%2F604.1">Mobile Video</a>
+				</li>
+				<li>
+					<a style="text-decoration:none" data-path="videoctv.html" href="videoctv.html">CTV Video</a>
 				</li>
 			</ul>
 		</div>
@@ -269,6 +272,9 @@
 				<li>
 					<a style="text-decoration:none" data-path="prebid/prebidVideo.html" href="prebid/prebidVideo.html">Video</a>
 				</li>
+				<li>
+					<a style="text-decoration:none" data-path="prebid/prebids2s.html" href="prebid/prebids2s.html">Prebid Server</a>
+				</li>
 			</ul>
 		</div>
 		<div class="hidden" id="site_9" data-niu="huskies">
@@ -377,7 +383,7 @@
 				</li>
 			</ul>
 		</div>
-		
+
 		<br>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -397,27 +403,27 @@
 					var oldPath = $anchor.attr('href').replace('_ns', '');
 						var newPath = oldPath.replace(/_ns\//g, '/')
 						console.log('new path secure', newPath)
-						
-						
+
+
 						$anchor.attr('href', newPath);
 					/*if (!isSecure){
-						
+
 						var oldPath = $anchor.attr('href').replace('_ns', '');
 
 						var newPath = oldPath.replace(/\//, '_ns/')
 						console.log('new path nonsecure', newPath)
-					
+
 						$anchor.attr('href', newPath);
 					} else {
 						var oldPath = $anchor.attr('href').replace('_ns', '');
 						var newPath = oldPath.replace(/_ns\//g, '/')
 						console.log('new path secure', newPath)
-						
-						
+
+
 						$anchor.attr('href', newPath);
-					
+
 					}
-					
+
 				})
 			}*/
 
@@ -431,7 +437,7 @@
 
 
 			$(document).ready(function () {
-				// hide all elements 
+				// hide all elements
 
 				$('div.hidden').hide();
 				// TODO ADD ON CHANGE TO CHECKOBOX

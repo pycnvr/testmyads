@@ -1,8 +1,8 @@
-<!-- saved from url=(0041)http://testmyads.com/testmyads/test1.html -->
+<!-- saved from url=(0041)/testmyads/test1.html -->
 <html>
 
 <head>
-	<link rel="icon" href="http://testmyads.com/testmyads/images/epsilon_fav_icon.ico">
+	<link rel="icon" href="/testmyads/images/epsilon_fav_icon.ico">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>Test Page Menu</title>
 	<style>
@@ -22,7 +22,7 @@
 
 	<body link="black">
 		<a href="http://www.conversantmedia.com/">
-			<img src="http://testmyads.com/testmyads/images/EPS_Logo_cropped.jpg" alt="logo" height="72" border="0">
+			<img src="/testmyads/images/EPS_Logo_cropped.jpg" alt="logo" height="72" border="0">
 		</a>
 		<br>
 		<br>
@@ -187,22 +187,22 @@
 					// convert anchor tags in jquery element
 					var $anchor = $($(this)[0]);
 					if (!isSecure){
-						
+
 						var oldPath = $anchor.attr('href').replace('_ns', '');
 
 						var newPath = oldPath.replace(/\//, '_ns/')
 						console.log('new path nonsecure', newPath)
-					
+
 						$anchor.attr('href', newPath);
 					} else {
 						var oldPath = $anchor.attr('href').replace('_ns', '');
 						var newPath = oldPath.replace(/_ns\//g, '/')
 						console.log('new path secure', newPath)
-						
-						
+
+
 						$anchor.attr('href', newPath);
 					}
-					
+
 				})
 			}
 
@@ -216,7 +216,7 @@
 
 
 			$(document).ready(function () {
-				// hide all elements 
+				// hide all elements
 
 				$('div.hidden').hide();
 				// TODO ADD ON CHANGE TO CHECKOBOX
