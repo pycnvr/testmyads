@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Test</title>
+</head>
+<body>
+    <script>
+        var xobj = new XMLHttpRequest();
+        var url = "https://api-qa.conversant.mgr.consensu.org/euconsent?configId=35&cmpVersion=3.0.9-11&c=93975741636"
+        var body = '{"euconsentV2": "CO2ijlsO2ijmiAXADBENAuCMAP_AAH_AAAqIGJNV_T5fb2vj-3Z999tkeYwf95y3p-wjhgeMs-8NyYeH7BoGr2MwvBX4JiQKGRgEMjLBAQdlHGBcSQgAgIgFiTLMYk2MizNKJLJAilMbM0NYGC1OnsHTmZCY70-tO__zP3ef-wMSIJMFS-AkSEsIDSbNKIUwAQriAqQcAlBCMJBpYaEggJ2BQEeoAAACAwAAgQAgBBRCSCAAQAAJCIgBABAQCoAiAQAAgBGgIQAESAALACRIAgAFQNCQAiiCEAQgwOAo5QAgKkWgAAAA.IGJNV_T5fb2vj-3Z99_tkeYwf95y3p-wzhheMs-8NyYeH7BoGv2MwvBX4JiQKGRgksjLBAQdtHGhcSQgBgIhViTLMYk2MjzNKJLJAilsbO0NYGD9OnsHT3ZCY70-vu__7P3ff_wA"}';
+        xobj.open('POST', url, true);
+        xobj.withCredentials = true;
+        xobj.onreadystatechange = function() {
+            if (xobj.readyState == 4) {
+                console.log('xhr status = ' + xobj.status);
+                xobj.onreadystatechange = null;
+            }
+        }
+
+        xobj.send(body);
+    </script>
+    POST with credential
+</body>
+</html>
