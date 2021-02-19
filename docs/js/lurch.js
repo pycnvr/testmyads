@@ -1,6 +1,6 @@
 (function(win, doc) {
     win.lurch = win.lurch || {};
-    
+
     var checkList = ['launcher.min', 'pubcid', 'pubcode', 'cvl', 'gdpr-cmp-bootstrap'];
     var cbTagPrefix = 'cb_';         // prefix for checkbox id
     var pubcidTag = 'pubcid_here';   // span to show pubcid
@@ -13,7 +13,7 @@
     var lid;
     var sidBox;
     var lidBox;
-    
+
     function hasScript(searchString){
         var scripts = document.getElementsByTagName('script');
         for(let i = 0;i < scripts.length; i++){
@@ -65,7 +65,7 @@
             sid = undefined;
             removeStorageItem(sidTag);
         }
-        
+
         if (lidBox && lidBox.value !== undefined) {
             lid = lidBox.value;
             setStorageItem(lidTag, lid);
@@ -74,7 +74,7 @@
             lid = undefined;
             removeStorageItem(lidTag);
         }
-        
+
         win.location.reload();
     }
 
@@ -103,10 +103,9 @@
 
             lidBox = doc.createElement('input');
             lidBox.type = 'text';
-            console.log('lid is ', lid);
             if (lid != undefined)
                 lidBox.value = lid;
-         
+
             lidBox.placeholder = defaultLid;
             lidBox.size = 10;
             lidBox.id = lidTag;
@@ -148,7 +147,7 @@
     lurch.checkStatus = function() {
         for (let i = 0; i < checkList.length; ++i) {
             var item = hasScript(checkList[i]);
-                        
+
             var box = document.getElementById(cbTagPrefix + checkList[i]);
             if (box)
                 box.checked = (item !== undefined) ? true : false;
@@ -175,5 +174,5 @@
 
     loadStoredValues();
 
-    
+
 })(window, document);
