@@ -1,0 +1,18 @@
+<div id="header">
+  <h1>Retail Media Network Demo Store</h1>
+  <div id="cats">
+    <span><a class="catlink" href="#/">All</a></span>
+    <span><a class="catlink" href="#/cat/Electronics">Electronics</a></span>
+    <span><a class="catlink" href="#/cat/Home & Garden">Home & Garden</a></span>
+  </div>
+
+  <div class="search">
+    <form action="#/search" method="post">
+      <p>
+        <label>Search:</label>
+        <input type="text" size="20" name="searchTerm" />
+        <input type="submit" value="Search" />
+      </p>
+    </form>
+  </div>
+</div>
