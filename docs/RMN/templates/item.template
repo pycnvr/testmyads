@@ -1,0 +1,7 @@
+<div class="item">
+  <div class="item-image">
+    <a href="#/item/<%= id %>"><img src="<%= item.image_link %>" alt="<%= item.title %>" /></a>
+  </div>
+  <div class="item-title"><%= item.title %></div>
+  <div class="item-price">$<%= item.price %></div>
+</div>

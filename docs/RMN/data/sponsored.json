@@ -1,0 +1,12 @@
+{
+  "items" : [
+    {
+      "id" : 1,
+      "brand": "Sony",
+      "lineItems": [
+        { "productId" : 2, "keywords": [ "sony", "playstation", "games" ], "categories": [1] },
+        { "productId" : 4, "keywords": [ "sony", "tvs" ], "categories": [1] }
+      ]
+    }
+  ]
+}

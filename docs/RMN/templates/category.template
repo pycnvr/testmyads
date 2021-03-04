@@ -1,0 +1,1 @@
+ Categories: <span class="cat-title"><a href="#/cat/<%= cat.name %>"><%= cat.name %></a></span>
