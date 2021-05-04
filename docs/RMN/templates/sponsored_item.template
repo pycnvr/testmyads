@@ -1,7 +1,0 @@
-<div class="item sponsored">
-  <div class="item-image">
-    <a href="#/item/<%= id %>"><img src="<%= item.image_link %>" alt="<%= item.title %>" /></a>
-  </div>
-  <div class="item-title">(Sponsored) <%= item.title %></div>
-  <div class="item-price">$<%= item.price %></div>
-</div>
