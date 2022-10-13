@@ -235,12 +235,16 @@
 <body>
 <script>
     function clearAllCookies() {
-       document.cookie.split(';').forEach(s=>{
-            const name = s.split('=')[0];
-            if (name) {
-                document.cookie = name + '=;path=/;expires=Thu, 21 Sep 1979 00:00:01 UTC;';
-            }
-        });
+       let parts = document.location.hostname.split('.');
+       for (let i = 0; i < parts.length - 1; ++i) {
+           let currDomain = parts.slice(i).join();
+           document.cookie.split(';').forEach(s => {
+               const name = s.split('=')[0];
+               if (name) {
+                   document.cookie = name + '=;path=/;domain=' + currDomain + ';expires=Thu, 21 Sep 1979 00:00:01 UTC;';
+               }
+           });
+       }
     }
 
     function getCookie(name) {
