@@ -173,8 +173,8 @@
         const pubcid_node = document.getElementById('pubcid_value');
 
         function checkValues() {
-            const pbjs_publink_value = getCookie('pbjs_publink');
-            pubcid_node.innerText = pbjs_publink_value;
+            const pubcid_value = getCookie('_pubcid');
+            pubcid_node.innerText = pubcid_value;
         }
 
         setInterval(checkValues, 2000);
@@ -194,7 +194,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Cookies</h5>
+                    <h5 class="card-title text-center">Azure Reverse Proxy Test</h5>
                     <table class="table">
                         <thead>
                         <tr><th scope="col">Name</th><th scope="col">Value</th></tr>
